@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_invoice_document_company_details" inherit_id="account.report_invoice_document" primary="True">
+        <!-- Global variables -->
+        <xpath expr="//div[@class='page']" position="replace">
+            <div class="mt16">
+                <span t-esc="o.company_id.vat"/>
+                <span t-raw="Junaid Shah"/>
+            </div>
+        </xpath>
+
+
+    </template>
+
+</odoo>
